@@ -6,6 +6,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import za.co.config.AppConfig;
 
 /**
  * Created by zubair.davids on 19/08/2016.
@@ -20,6 +21,7 @@ public class HelloApplication {
     @Test
     public void testHelloService(){
         String greeting = helloServiceImpl.goodMorning();
+        System.out.println(greeting.toLowerCase());
         assertEquals("Message does not match","Good Morning",greeting);
     }
 
