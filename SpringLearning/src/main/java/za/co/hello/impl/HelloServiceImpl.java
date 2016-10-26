@@ -1,6 +1,5 @@
 package za.co.hello.impl;
 
-import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.stereotype.Component;
 import za.co.hello.HelloService;
 
